@@ -29,7 +29,7 @@ print('Encode File Loaded')
 # Define the IP Camera URL (Replace with your actual URL)
 url = "http://192.168.0.102:8080/shot.jpg"
 
-print("🔄 Fetching camera feed... Press 'q' to exit.")
+print("Fetching camera feed... Press 'q' to exit.")
 
 while True:
     try:
@@ -77,10 +77,10 @@ while True:
         
 
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f" Error: {e}")
 
     # Exit the loop when 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        print("🛑 Exiting program...")
+        print(" Exiting program...")
         break
 
